@@ -1,7 +1,7 @@
 """
 Số mạnh mẽ là số khi chia hết cho số nguyên tó thì cũng chia hết cho cả bình phương của số nguyên tố đó
 Ví dụ: 25 là soos mạnh mẽ, vì nó chia hết cho số nguyên tố 5 và chia hết cho cả bình phương của của 5 là 25
-Viết chương trình kiệt kê các số mạnh mẽ không vượt quá 1000
+Viết chương trình liệt kê các số mạnh mẽ không vượt quá 1000
 """
 
 from math import *
@@ -18,12 +18,12 @@ def nguyento(x):
 
 s = ''
 a = 2
-while a < 1000:
-    for i in range (2, a):
-        if a % i == a % (i*i) == 0:
-            if nguyento(i):
-                s += str(a) + ' '
-                break
-    a += 1
+while a < 1000: ## Liệt kê các số từ 2 đến 1000
+    for i in range (2, a):  ## liệt kê các số từ 2 đén a
+        if a % i == 0 and a % (i*i) == 0: ## Nếu a  chia hết cho i và a chia hết bình phương của i
+            if nguyento(i): # nếu số a thỏa điều kiện thì kiểm tra xem i có phải là số nguyên tố không
+                s += str(a) + ' ' # nếu đúng thì cộng vào chuỗi
+                break # và dừng vòng lặp for
+    a += 1 # sau mỗi lần lặp thì thì cộng thêm 1
 
 print(s)
