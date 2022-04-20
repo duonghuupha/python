@@ -22,7 +22,6 @@ def listtoString(s):
 
 a = check_numberic("Nhập vào một số lớn hơn 10: ")
 a = str(a)
-du_lieu = list(reversed(a))
-dao_nguoc = listtoString(du_lieu)
-dao_nguoc = int(dao_nguoc)
+du_lieu = a[::-1]
+dao_nguoc = int(du_lieu)
 print(dao_nguoc % 19)
