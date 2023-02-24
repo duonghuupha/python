@@ -1,5 +1,6 @@
 """
-Tìm số  đảo ngược Y của một số X, biết Y gồm các chữ số của X và viết theo thứ tự ngược lại. Xuất ra kết quả là số Y mod 19
+Tìm số  đảo ngược Y của một số X, biết Y gồm các chữ số của X và viết theo thứ tự ngược lại. 
+Xuất ra kết quả là số Y mod 19
 Ví dụ: 123 => 321 => 321 mod 19 = 17
 """
 
